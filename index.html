@@ -48,7 +48,7 @@
             
             padding: 10px;
             border: none;
-            border-radius: 2px;
+            border-radius: 4px;
             display: block;
             align-self: center;
             width: 97%;
@@ -64,12 +64,14 @@
             float: left;
             width: 20px;
             margin-top: 2px; /*aligns the radio and check buttons with their respective label*/
-            height: 15px;
+            height: 20px;
             margin-right: 10px;
             display: block;
         }
         form label{
             padding-top: 0;
+            font-size: 18px;
+            font-weight: 400;
         }
         form label, p{
             display: block;
@@ -89,7 +91,7 @@
             margin-top: 20px;
             margin-bottom: 50px;
             padding: 15px 20px;
-            
+            font-size: 18px;
             color: white;
 
             
@@ -122,7 +124,7 @@
             <div class="form-control">
                 <label for="current-role">Which option best describes your current role?</label>
                 <select id="current-role" name="role" placeholder="Select current role">
-                    <option>Select current role</option>
+                    <option disabled>Select current role</option>
                     <option>Student</option>
                     <option>Full Time Job</option>
                     <option>Full Time Learner</option>
@@ -147,11 +149,12 @@
 
             <div class="form-control">
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label> 
-                <select id="feature">
-                    <option id=""></option>
-                    <option id=""></option>
-                    <option id=""></option>
-                    <option id=""></option>
+                <select id="feature" placeholder="">
+                    <option disabled id="select">Select an option</option>
+                    <option id="Challenges">Challenges</option>
+                    <option id="Projects">Projects</option>
+                    <option id="Community">Community</option>
+                    <option id="Open Source">Open Source</option>
                 </select>
             </div>
 
