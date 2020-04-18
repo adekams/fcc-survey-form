@@ -45,8 +45,9 @@
 
         }
         form input, form select{
-            
+            color: #61676D;
             padding: 10px;
+            font-size: 18px;
             border: none;
             border-radius: 4px;
             display: block;
@@ -71,7 +72,7 @@
         form label{
             padding-top: 0;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: bold;
         }
         form label, p{
             display: block;
@@ -81,6 +82,7 @@
         }
         textarea{
             width: 97%;
+            color: #61676D;
             padding: 10px;
             box-sizing: border-box;
             font-size: 15px;
@@ -91,7 +93,7 @@
             margin-top: 20px;
             margin-bottom: 50px;
             padding: 15px 20px;
-            font-size: 18px;
+            font-size: 20px;
             color: white;
 
             
@@ -124,7 +126,7 @@
             <div class="form-control">
                 <label for="current-role">Which option best describes your current role?</label>
                 <select id="current-role" name="role" placeholder="Select current role">
-                    <option disabled>Select current role</option>
+                    <!--<option disabled>Select current role</option>-->
                     <option>Student</option>
                     <option>Full Time Job</option>
                     <option>Full Time Learner</option>
@@ -149,8 +151,8 @@
 
             <div class="form-control">
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label> 
-                <select id="feature" placeholder="">
-                    <option disabled id="select">Select an option</option>
+                <select id="feature" placeholder="Select an option">
+                    <option id="select">Select an option</option>
                     <option id="Challenges">Challenges</option>
                     <option id="Projects">Projects</option>
                     <option id="Community">Community</option>
