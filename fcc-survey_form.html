@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            background:linear-gradient(to right, rgba(58, 58, 173, 0.7), rgba(114, 114, 187, 0.7)),  url('https://res.cloudinary.com/adenike/image/upload/v1586709952/survey-form-background_jbnvuo.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            font-family: sans-serif;
+        }
+        .header{
+            color: white;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .header h1{
+            font-family:inherit;
+            font-size: 28px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        .header h2{
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 10px;
+            font-weight: 200;
+        }
+        .survey-form form{
+            display: block;
+            padding: 20px;
+            border-radius: 3px;
+            border: none;
+            margin: 40px auto;
+            width: 50%;
+            margin-bottom: 0;
+            background: linear-gradient(rgb(38, 38, 66, 0.8),rgb(0, 0, 0, 0.8));
+            padding-right: 40px;
+
+        }
+        form input, form select{
+            
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+            display: block;
+            align-self: center;
+            width: 97%;
+            box-sizing: border-box;
+            
+        }
+
+        .survey-form .form-control{
+            padding-top: 5px;
+            margin: 10px 0 10px 10px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            float: left;
+            width: 20px;
+            margin-top: 2px; /*aligns the radio and check buttons with their respective label*/
+            height: 15px;
+            margin-right: 10px;
+            display: block;
+        }
+        form label{
+            padding-top: 0;
+        }
+        form label, p{
+            display: block;
+            color: white;
+            margin: 10px; /*margin: 10px*/
+            
+        }
+        textarea{
+            width: 97%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        form input[type='submit']{
+            background-color: rgb(55, 175, 101);
+            border: none;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding: 15px 20px;
+            
+            color: white;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>freeCodeCamp Survey Form</h1>
+        <h2 class="Thanks">Thank you for taking time to help us improve the platform</h2>
+    </div>
+
+    <div class="survey-form">
+        <form>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-control">
+                <label for="age">Age(optional)</label>
+                <input type="number" id="age" name="age" placeholder="Age">
+            </div>
+
+            <div class="form-control">
+                <label for="current-role">Which option best describes your current role?</label>
+                <select id="current-role" name="role" placeholder="Select current role">
+                    <option>Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Others</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <div class="radio-btns">
+                    <input type="radio" id="Definitely" name="recommend" value="Definitely">
+                    <label for="Definitely">Definitely</label>
+                
+                    <input type="radio" id="maybe" name="recommend" value="Maybe">
+                    <label for="maybe">Maybe</label>
+            
+                    <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                    <label for="not-sure">Not sure</label>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label> 
+                <select id="feature">
+                    <option id=""></option>
+                    <option id=""></option>
+                    <option id=""></option>
+                    <option id=""></option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="improve">What would you like to see improved? (Check all that apply)</label>
+                <input type="checkbox" id="FE" name="" value="Front-end Projects">
+                <label for="FE">Front-end Projects</label>
+                <input type="checkbox" id="BE" name="" value="Back-end Projects">
+                <label for="BE">Back-end Projects</label>
+                <input type="checkbox" id="DV" name="" value="Data Visualization">
+                <label for="DV">Data Visualization</label>
+                <input type="checkbox" id="challenges" name="" value="Challenges">
+                <label for="challenges">Challenges</label>
+                <input type="checkbox" id="OSC" name="" value="Open Source Community">
+                <label for="OSC">Open Source </label>
+                <input type="checkbox" id="GHR" name="" value="Gitter Help rooms">
+                <label for="GHR">Gitter Help room</label>
+                <input type="checkbox" id="videos" name="" value="Videos">
+                <label for="videos">Videos</label>
+                <input type="checkbox" id="City-meets" name="" value="City Meetups">
+                <label for="City-meets">City Meetups</label>
+                <input type="checkbox" id="wiki" name="" value="Wiki">
+                <label for="wiki">Wiki</label>
+                <input type="checkbox" id="forum" name="" value="Forum">
+                <label for="forum">Forum</label>
+                <input type="checkbox" id="add-courses" name="" value="Additional Courses">
+                <label for="add-courses">Additional Courses</label>
+            </div>
+
+            <div class="form-control">
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea id="comments" rows="5" placeholder="Enter your comment here.."></textarea>
+            </div>
+            <div class="form-control">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
