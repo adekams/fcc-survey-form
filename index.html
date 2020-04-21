@@ -45,10 +45,11 @@
 
         }
         form input, form select{
-            
+            color: #61676D;
             padding: 10px;
+            font-size: 16px;
             border: none;
-            border-radius: 2px;
+            border-radius: 4px;
             display: block;
             align-self: center;
             width: 97%;
@@ -64,12 +65,14 @@
             float: left;
             width: 20px;
             margin-top: 2px; /*aligns the radio and check buttons with their respective label*/
-            height: 15px;
+            height: 20px;
             margin-right: 10px;
             display: block;
         }
         form label{
             padding-top: 0;
+            font-size: 18px;
+            font-weight: 400;
         }
         form label, p{
             display: block;
@@ -79,6 +82,7 @@
         }
         textarea{
             width: 97%;
+            color: #61676D;
             padding: 10px;
             box-sizing: border-box;
             font-size: 15px;
@@ -89,7 +93,7 @@
             margin-top: 20px;
             margin-bottom: 50px;
             padding: 15px 20px;
-            
+            font-size: 18px;
             color: white;
 
             
@@ -147,11 +151,12 @@
 
             <div class="form-control">
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label> 
-                <select id="feature">
-                    <option id=""></option>
-                    <option id=""></option>
-                    <option id=""></option>
-                    <option id=""></option>
+                <select id="feature" placeholder="Select an option">
+                    <option id="select">Select an option</option>
+                    <option id="Challenges">Challenges</option>
+                    <option id="Projects">Projects</option>
+                    <option id="Community">Community</option>
+                    <option id="Open Source">Open Source</option>
                 </select>
             </div>
 
